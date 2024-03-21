@@ -284,8 +284,10 @@
         
 		var wordBox = document.getElementById("wordBox");
 		var word = "";
+
+		wordBox.addEventListener('click', wordBoxFocusOut);
         
-		wordBox.addEventListener("focusout", wordBoxFocusOut);
+		//wordBox.addEventListener("focusout", wordBoxFocusOut);
 
 		function wordBoxFocusOut()
 		{
